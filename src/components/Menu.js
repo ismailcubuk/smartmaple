@@ -1,9 +1,9 @@
 import React from "react";
-import headerIcon from "../icons/header-logo.png";
-import DaySleet from "../icons/forecast/DaySleet";
-import Explore from "../icons/menu/Explore";
-import Location from "../icons/menu/Location";
-import Settings from "../icons/menu/Settings";
+import headerIcon from "../assets/images/header-logo.png";
+import DaySleet from "../assets/icons/forecast/DaySleet";
+import Explore from "../assets/icons/menu/Explore";
+import Location from "../assets/icons/menu/Location";
+import Settings from "../assets/icons/menu/Settings";
 
 const menuItems = [
   { icon: <DaySleet width={80} height={80} color="white" />, label: "weather" },

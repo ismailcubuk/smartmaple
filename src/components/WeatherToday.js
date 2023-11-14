@@ -1,7 +1,7 @@
 import React from "react";
 import data from "../data/ReactProjectData.json";
-import Location from "../icons/menu/Location";
-import Thunder from "../icons/forecast/Thunder";
+import Location from "../assets/icons/menu/Location";
+import Thunder from "../assets/icons/forecast/Thunder";
 
 export default function WeatherToday() {
   const dateObject = new Date(data.date);
