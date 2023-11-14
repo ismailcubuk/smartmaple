@@ -9,7 +9,7 @@ module.exports = {
         inter: ['Inter', 'sans-serif'],
       },
       colors:{
-        secondWhite:'#C4C3C1',
+        primary:'#C4C3C1',
       }
     },
   },
