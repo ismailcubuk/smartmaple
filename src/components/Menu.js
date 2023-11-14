@@ -1,12 +1,12 @@
 import React from "react";
 import headerIcon from "../assets/images/header-logo.png";
-import DaySleet from "../assets/icons/forecast/DaySleet";
+import SunnyRainy from "../assets/icons/forecast/SunnyRainy";
 import Explore from "../assets/icons/menu/Explore";
 import Location from "../assets/icons/menu/Location";
 import Settings from "../assets/icons/menu/Settings";
 
 const menuItems = [
-  { icon: <DaySleet width={80} height={80} color="white" />, label: "weather" },
+  { icon: <SunnyRainy width={80} height={80} color="white" />, label: "weather" },
   { icon: <Explore width={34} height={34} color="#C4C3C1" />, label: "explore" },
   { icon: <Location width={34} height={34} color="#C4C3C1" />, label: "cities" },
   { icon: <Settings width={34} height={34} color="#C4C3C1" />, label: "settings" },

@@ -7,7 +7,7 @@ import WeeklyForecast from "./components/WeeklyForecast";
 
 export default function App() {
   return (
-    <div className="font-inter flex flex-col h-screen bg-cover text-white" style={{backgroundImage: `url(${backgroundImage})`}}>
+    <div className="font-inter flex flex-col h-screen bg-cover text-white " style={{backgroundImage: `url(${backgroundImage})`}}>
       <div className="flex h-2/6 w-full">
         <WeatherToday />
         <div>asd</div>
