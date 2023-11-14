@@ -4,21 +4,26 @@ import Menu from "./components/Menu";
 import backgroundImage from './assets/images/background.jpeg';
 import Activities from "./components/Activities";
 import WeeklyForecast from "./components/WeeklyForecast";
+import Detail from "./components/Detail";
+import Chart from "./components/Chart";
 
 export default function App() {
   return (
-    <div className="font-inter flex flex-col h-screen bg-cover text-white " style={{backgroundImage: `url(${backgroundImage})`}}>
-      <div className="flex h-2/6 w-full">
+    <div className="font-inter flex flex-col h-screen bg-cover text-white p-8 gap-7" style={{backgroundImage: `url(${backgroundImage})`}}>
+      <div className="flex h-2/6 w-full gap-6">
         <WeatherToday />
-        <div>asd</div>
+        <Chart/>
       </div>
-      <div className="flex h-4/6 w-7/12 gap-6">
-        <div className="w-2/12 card">
+      <div className="flex h-4/6 w-12/12 gap-6">
+        <div className="w-1/12 card">
           <Menu/>
         </div>
-        <div className="w-10/12 flex flex-col gap-5">
+        <div className="w-6/12 flex flex-col gap-5">
             <Activities/>
             <WeeklyForecast/>
+        </div>
+        <div className="w-5/12 border-2 flex flex-col gap-5 card relative">
+          <Detail/>
         </div>
       </div>
     </div>
