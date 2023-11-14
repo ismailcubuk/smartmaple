@@ -1,11 +1,8 @@
-import './App.css';
+import React from 'react'
 
-function App() {
+export default function App() {
   return (
-    <div>
-asd
-    </div>
-  );
+    <div className='border-2 border-red-500'>App</div>
+  )
 }
 
-export default App;
