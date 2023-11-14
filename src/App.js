@@ -3,6 +3,7 @@ import WeatherToday from "./components/WeatherToday";
 import Menu from "./components/Menu";
 import backgroundImage from './assets/images/background.jpeg';
 import Activities from "./components/Activities";
+import WeeklyForecast from "./components/WeeklyForecast";
 
 export default function App() {
   return (
@@ -16,10 +17,8 @@ export default function App() {
           <Menu/>
         </div>
         <div className="w-10/12 flex flex-col gap-5">
-          <div className="h-3/6 card">
             <Activities/>
-          </div>
-          <div className="h-3/6 card">forecast</div>
+            <WeeklyForecast/>
         </div>
       </div>
     </div>

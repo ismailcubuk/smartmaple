@@ -9,7 +9,7 @@ const images = [img1, img2, img3, img4];
 
 export default function Activities() {
   return (
-    <div className="flex flex-row justify-between h-full items-center relative p-11">
+    <div className="flex flex-row justify-between items-center relative p-11 card h-3/6">
       <div className="absolute top-4 left-4 flex items-center">
         <Heart color="white" width={20} height={20} />
         <p className="font-medium">Activities in your area</p>
