@@ -11,12 +11,12 @@ export default function App() {
         <div>asd</div>
       </div>
       <div className="flex h-4/6 w-7/12 gap-6">
-        <div className="w-2/12 border-2">
+        <div className="w-2/12 card">
           <Menu/>
         </div>
-        <div className="w-10/12 flex flex-col gap-5 border-2">
-          <div className="h-3/6 border-2">activities</div>
-          <div className="h-3/6 border-2">forecast</div>
+        <div className="w-10/12 flex flex-col gap-5">
+          <div className="h-3/6 card">activities</div>
+          <div className="h-3/6 card">forecast</div>
         </div>
       </div>
     </div>
