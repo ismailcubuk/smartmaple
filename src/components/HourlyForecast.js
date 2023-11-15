@@ -15,11 +15,11 @@ export default function HourlyForecast() {
 
   return (
     <div className="w-full h-full card flex flex-col overflow-hidden justify-between">
-      <div className="px-5 pt-3 h-full flex gap-2">
+      <div className="px-5 py-3 h-full flex gap-2 ">
         <Clock width={25} height={25} color="white" />
         Hourly Forecast
       </div>
-      <div className="h-40 lg:h-full w-full border-2 ">
+      <div className="h-40 lg:h-full w-full ">
         <ResponsiveContainer width="100%" height="110%">
           <LineChart data={data}>
             <Line
