@@ -9,6 +9,6 @@ export default function FormattedDate() {
   const year = dateObject.getFullYear();
 
   const formattedDate = `${day} | ${dayOfMonth} ${month} ${year}`;
-  return <div className="text-[40px]">{formattedDate}</div>;
+  return <div className="text-[16px] sm:text-[20px] md:text-[28px] lg:text-[36px] xl:text-[40px]">{formattedDate}</div>;
 }
 

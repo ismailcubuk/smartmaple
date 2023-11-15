@@ -59,7 +59,7 @@ export default function HourlyForecast() {
 
     return (
       <g>
-<text x={x} y={y - 10} fill="white" textAnchor={index === 0 ? "start" : "end"}>
+      <text x={x} y={y - 10} fill="white" textAnchor={index === 0 ? "start" : "end"}>
         {value}
       </text>
       <foreignObject x={index === 0 ? x +5  : x-25} y={y + 10} width={24} height={24}>
@@ -76,13 +76,13 @@ export default function HourlyForecast() {
   };
 
   return (
-    <div className="w-full card h-4/6 flex flex-col justify-between">
-      <div className="px-5 pt-3 flex gap-2">
+    <div className="w-full h-full card flex flex-col overflow-hidden justify-between">
+      <div className="px-5 pt-3 h-full flex gap-2">
         <Clock width={25} height={25} color="white"/>
         Hourly Forecast
       </div>
-      <div className="h-5/6 w-full ">
-        <ResponsiveContainer width="100%" height="100%">
+      <div className="h-40 lg:h-full w-full border-2 ">
+        <ResponsiveContainer width="100%" height="110%" >
           <LineChart data={data}>
             <Line
               dot={false}
@@ -91,6 +91,7 @@ export default function HourlyForecast() {
               stroke="white"
               strokeWidth={2}
               label={renderCustomizedLabel}
+              isAnimationActive={false}
             />
           </LineChart>
         </ResponsiveContainer>

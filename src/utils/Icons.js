@@ -9,19 +9,19 @@ export default function Icons({ current }) {
 
   switch (current.type) {
     case "rainy":
-      iconComponent = <Rainy width={50} height={50} color="white" />;
+      iconComponent = <Rainy width="100%" height="100%" color="white" />;
       break;
     case "sunny":
-      iconComponent = <Sunny width={50} height={50} color="white" />;
+      iconComponent = <Sunny width="100%" height="100%" color="white" />;
       break;
     case "sunny cloudy":
-      iconComponent = <SunnyCloudy width={50} height={50} color="white" />;
+      iconComponent = <SunnyCloudy width="100%" height="100%" color="white" />;
       break;
     case "sunny rainy":
-      iconComponent = <SunnyRainy width={50} height={50} color="white" />;
+      iconComponent = <SunnyRainy width="100%" height="100%" color="white" />;
       break;
     case "thunder":
-      iconComponent = <Thunder width={50} height={50} color="white" />;
+      iconComponent = <Thunder width="100%" height="100%" color="white" />;
       break;
     default:
       iconComponent = null;

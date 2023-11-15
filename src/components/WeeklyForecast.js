@@ -18,9 +18,29 @@ export default function WeeklyForecast() {
       setCurrentPage(pages[newIndex]);
     }
   };
+  const shortedDay = (weeklyWeather) => {
+    switch (weeklyWeather) {
+      case "sunday":
+        return "S";
+      case "monday":
+        return "M";
+      case "tuesday":
+        return "T";
+      case "wednesday":
+        return "W";
+      case "thursday":
+        return "T";
+      case "friday":
+        return "F";
+      case "saturday":
+        return "S";
+      default:
+        return "";
+    }
+  };
 
   return (
-    <div className="py-11 px-1 card h-3/6 w-full flex">
+    <div className="py-11 px-1 card h-full w-full flex ">
       <ul className="flex w-full h-full items-center justify-between">
         <button
           className="px-2 h-full flex items-center justify-center"
@@ -33,9 +53,14 @@ export default function WeeklyForecast() {
             key={index}
             className="flex h-full w-full  flex-col justify-around items-center"
           >
-            <p>{day}</p>
-            <Icons current={currentData[day]} />
-            <div>{currentData[day].degree}°C</div>
+            <p className="hidden md:flex lg:hidden xl:flex" >{day}</p>
+            <div className="flex md:hidden lg:flex xl:hidden">{shortedDay(day)}</div>
+            <div className="w-6 h-6 md:w-8 md:h-8 lg:w-12 lg:h-12 ">
+              <Icons current={currentData[day]} />
+            </div>
+            <div className="text-xs sm:text-sm md:text-base">
+              {currentData[day].degree}°C
+            </div>
           </li>
         ))}
         <button

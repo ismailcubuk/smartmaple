@@ -9,16 +9,18 @@ const images = [img1, img2, img3, img4];
 
 export default function Activities() {
   return (
-    <div className=" flex flex-row justify-between items-center relative p-11 card h-3/6">
-      <div className="absolute top-4 left-4 flex items-center">
+    <div className="flex flex-col gap-2 h-full">
+      <div className="flex gap-8 h-2/6 lg:h-2/6 xl:h-1/6 px-8 items-center border-2">
         <Heart color="white" width={20} height={20} />
         <p className="font-medium">Activities in your area</p>
       </div>
+      <div className="flex h-4/6 lg:h-4/6 xl:h-5/6 justify-around">
       {images.map((image, index) => (
-        <div key={index} className="w-48 h-48 flex rounded-md overflow-hidden">
-          <img src={image} alt={`img${index + 1}`} className="w-full h-full object-cover" />
+        <div key={index} className=" w-1/4 p-4  h-full flex rounded-md">
+          <img src={image} alt={`img${index + 1}`} className="w-full h-full  object-fill" />
         </div>
       ))}
+      </div>
     </div>
   );
 }
