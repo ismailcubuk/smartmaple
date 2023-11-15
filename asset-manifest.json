@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/smartmaple/static/css/main.ba367019.css",
-    "main.js": "/smartmaple/static/js/main.7652b04f.js",
+    "main.css": "/smartmaple/static/css/main.fdb4dbe7.css",
+    "main.js": "/smartmaple/static/js/main.a42541a3.js",
     "static/media/background.jpeg": "/smartmaple/static/media/background.c3523ea9a1600e26eed0.jpeg",
     "static/media/Inter.var.woff2?v=3.18": "/smartmaple/static/media/Inter.var.9df5db385c3370707c5b.woff2",
     "static/media/Inter-italic.var.woff2?v=3.18": "/smartmaple/static/media/Inter-italic.var.b27297c148a7ef314ce2.woff2",
@@ -48,11 +48,11 @@
     "static/media/img3.jpeg": "/smartmaple/static/media/img3.8512a5030d29f80b6b62.jpeg",
     "static/media/img4.jpeg": "/smartmaple/static/media/img4.d146fca44bff4d909cc4.jpeg",
     "index.html": "/smartmaple/index.html",
-    "main.ba367019.css.map": "/smartmaple/static/css/main.ba367019.css.map",
-    "main.7652b04f.js.map": "/smartmaple/static/js/main.7652b04f.js.map"
+    "main.fdb4dbe7.css.map": "/smartmaple/static/css/main.fdb4dbe7.css.map",
+    "main.a42541a3.js.map": "/smartmaple/static/js/main.a42541a3.js.map"
   },
   "entrypoints": [
-    "static/css/main.ba367019.css",
-    "static/js/main.7652b04f.js"
+    "static/css/main.fdb4dbe7.css",
+    "static/js/main.a42541a3.js"
   ]
 }
