@@ -21,7 +21,7 @@ export default function WeeklyForecast() {
   };
 
   return (
-    <div className="px-1 card h-full w-full flex flex-col items-center ">
+    <div className="px-1  card h-full w-full flex flex-col items-center ">
       <div className="pt-2 uppercase font-extrabold">{currentPage} WEEK</div>
       <ul className="flex w-full h-full items-center justify-between">
         <button
