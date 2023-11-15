@@ -20,7 +20,7 @@ export default function Detail() {
   ];
 
   return (
-    <div className="h-full">
+    <div className="w-5/12 h-full card">
       <div className="flex items-center w-full h-1/6 gap-6 pl-5">
         <Clock width={60} height={60} color="white" />
         <p className="text-[32px] font-medium">{hours}:{minutes}PM GMT</p>

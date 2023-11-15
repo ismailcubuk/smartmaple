@@ -76,7 +76,7 @@ export default function HourlyForecast() {
   };
 
   return (
-    <div className="w-5/12 card h-full flex flex-col justify-between">
+    <div className="w-full card h-4/6 flex flex-col justify-between">
       <div className="px-5 pt-3 flex gap-2">
         <Clock width={25} height={25} color="white"/>
         Hourly Forecast

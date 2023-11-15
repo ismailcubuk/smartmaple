@@ -14,7 +14,7 @@ const menuItems = [
 
 export default function Menu() {
   return (
-    <div className="flex flex-col items-center h-full justify-around">
+    <div className="flex flex-col items-center card h-full justify-around">
     <img src={headerIcon} width={100} height={100} alt="headerIcon" />
     {menuItems.map((item, index) => (
       <div key={index} className="cursor-pointer w-full flex flex-col items-center gap-1">
