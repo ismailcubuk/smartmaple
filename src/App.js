@@ -11,7 +11,7 @@ import HourlyForecast from "./components/HourlyForecast";
 export default function App() {
   return (
     <div
-      className="font-inter flex h-screen flex-col bg-cover text-white p-8 gap-8"
+      className="font-inter flex h-full lg:h-screen flex-col bg-cover text-white p-8 gap-8"
       style={{ backgroundImage: `url(${backgroundImage})` }}
     >
       <div className=" h-full lg:h-1/3 flex flex-wrap lg:flex-nowrap gap-8 w-full">
