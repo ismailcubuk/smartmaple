@@ -1,12 +1,11 @@
 import React from "react";
-import Gradient from "../assets/images/Gradient";
 import Clock from "../assets/icons/menu/Clock";
 import data from "../data/ReactProjectData.json";
 import RealFeel from "../assets/icons/airconditions/RealFeel";
 import Drops from "../assets/icons/airconditions/Drops";
 import Wind from "../assets/icons/airconditions/Wind";
 import Sun from "../assets/icons/forecast/Sunny";
-
+import DetailBg from "../assets/images/DetailBG.png"
 export default function Detail() {
   const dateObject = new Date(data.date);
   const hours = dateObject.getUTCHours();
@@ -29,7 +28,7 @@ export default function Detail() {
       <p className="w-full text-[32px] h-1/6 flex items-center font-bold pl-8">
         AIR CONDITIONS
       </p>
-      <div className="h-4/6 w-full flex justify-around">
+      <div className="h-4/6 w-full flex justify-around bg-cover pt-10" style={{backgroundImage: `url(${DetailBg})`}}>
         <div className="h-full w-full flex flex-row flex-wrap justify-around">
           {airConditionItems.map((item, index) => (
             <div key={index} className="flex pl-16 w-3/6 gap-2  items-center">
@@ -41,9 +40,6 @@ export default function Detail() {
             </div>
           ))}
         </div>
-      </div>
-      <div className="w-full absolute bottom-0">
-        <Gradient />
       </div>
     </div>
   );

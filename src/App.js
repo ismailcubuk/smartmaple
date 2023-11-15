@@ -22,7 +22,7 @@ export default function App() {
             <Activities/>
             <WeeklyForecast/>
         </div>
-        <div className="w-5/12 border-2 flex flex-col gap-5 card relative">
+        <div className="w-5/12 flex flex-col gap-5 card relative">
           <Detail/>
         </div>
       </div>
